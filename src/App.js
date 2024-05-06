@@ -13,6 +13,7 @@ import PastEvents from "./views/PastEvents";
 import PendingEvents from "./views/PendingEvents";
 import Tags from "./views/Tags";
 import Users from "./views/Users";
+import EventsViewNew from "./views/EventsViewNew";
 
 const SentryRoute = Sentry.withSentryRouting(Route);
 
@@ -42,6 +43,7 @@ const App = () => {
           <SentryRoute path="/check-in/:eventId" component={CheckInPage} />
           <SentryRoute path="/tags" component={Tags} />
           <SentryRoute path="/users" component={Users} />
+          <SentryRoute path="/current-events" component={EventsViewNew} />
         </div>
       </div>
     </div>

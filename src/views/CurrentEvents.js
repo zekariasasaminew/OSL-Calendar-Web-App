@@ -7,7 +7,7 @@ import EventsViewNew from "../components/events/EventsViewNew";
 class CurrentEvents extends Component {
   // Render the Current Events page
   render() {
-    return <EventsViewNew eventType={"/current-events"} />;
+    return <EventsViewNew eventType={"/current-events"} showCapacityInput={true} />;
   }
 }
 
